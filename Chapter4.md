@@ -39,12 +39,6 @@ rdd.mapValues(x=>(x,1)).reduceByKey((x,y)=>(x._1+y._1,x._2+y._2))
 ~~~~
 > `reduceByKey()` and `foldByKey()` will automatically perform combinig locally on each machine before computing global totals for each key.
 
-`combineByKey()`: is the most general of the per-key aggreation functions, Most of the other per-key combiners are implemented usgin it.   
-
-
-
-
-
-
-
-
+`combineByKey()`: is the most general of the per-key aggreation functions, Most of the other per-key combiners are implemented using it.   That goes through the elements in a partition, each element either has a key is hasn't seen before or has the same key as a previous element.  
+If it's new element, `combineByKey()` uses a function we provide to create the initial value for the accumulator on that key.
+Imprortant Thing, this happens the first time a key is found in each partition, rather than only the first time the key is found in the RDD.
