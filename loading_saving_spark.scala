@@ -1,6 +1,6 @@
 //Some Documentation of spark 1.6 version based on hadoop 2.7 version
-//Some documentation of” Learning spark Book” (Holden Karau, Andy Konwinski)   
-//2015 Every source codes were experienced, it runs above version. 
+//Some documentation of "Learning spark Book" (Holden Karau, Andy Konwinski 2015) chapter 5     
+//Every source codes were experienced, it runs above version. 
 //Developed by  KIT  Nplab:
 //Loading data common file formats: (txt, json, ).  In Scala 
 
