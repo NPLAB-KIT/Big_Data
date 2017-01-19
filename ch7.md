@@ -10,6 +10,8 @@
 
 * *scheduling tasks on executors:* The Spark driver will look at the current set of executors and try to schedule each task in an appropriate location, based on data placement.
 
+![](task.png)
+
 #### Executors
 
 * Worker processes responsible for running the individual tasks in a given Spark job
