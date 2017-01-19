@@ -1,6 +1,6 @@
 ### Spark Runtime Architecture
 #### The component of a distributed park application
-![](comp.jpg)
+![](comp.png)
 #### The Driver
 *  the process where the main() method of your program runs
 *  the process running the user code that creates a SparkContext, creates RDDs, and per‐ forms transformations and actions
@@ -347,6 +347,7 @@ Spark comes with a built-in script to launch clusters on Amazon EC2. This script
 ### Which Cluster Manager to Use?
 
 * Start with a Standalone cluster if this is a new deployment. 
-* If you would like to run Spark alongside other applications, or to use richer resource scheduling capabilities (e.g., queues), both YARN and Mesos provide these features. * One advantage of Mesos over both YARN and Standalone mode is its fine- grained sharing option, which lets interactive applications such as the Spark shell scale down their CPU allocation between commands. 
+* If you would like to run Spark alongside other applications, or to use richer resource scheduling capabilities (e.g., queues), both YARN and Mesos provide these features. 
+* One advantage of Mesos over both YARN and Standalone mode is its fine- grained sharing option, which lets interactive applications such as the Spark shell scale down their CPU allocation between commands. 
 * In all cases, it is best to run Spark on the same nodes as HDFS for fast access to storage.
 
